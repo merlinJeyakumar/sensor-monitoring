@@ -1,0 +1,11 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd'T'HH:mm:ss.SSS,UTC}Z %-5level %logger{24} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="${LOG_LEVEL:-INFO}">
+        <appender-ref ref="CONSOLE" />
+    </root>
+    <logger name="monitoring.alarm" level="WARN" />
+</configuration>

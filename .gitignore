@@ -1,0 +1,12 @@
+.gradle/
+.kotlin/
+.bootstrap/
+**/build/
+.idea/
+*.iml
+.env
+.env.*
+!ops/example.env
+*.local.properties
+*.local.conf
+*.log
